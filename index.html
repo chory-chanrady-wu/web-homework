@@ -90,21 +90,37 @@
       .all-product {
         text-align: center;
       }
-      footer {
-        font-size: 24px;
-        text-align: center;
-        color: #007bff;
-        background-color: #ec12125d;
+      .footer {
+        background-color: #f8d7da; /* pink like your screenshot */
         font-weight: bold;
-        height: 80px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column; /* stack copyright and icons */
+        align-items: center; /* center horizontally */
+        padding: 10px 0;
       }
-      a img {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
+
+      .footer p {
+        margin: 0 0 10px 0; /* small gap below text */
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 10px;
+      }
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        align-items: end;
+        justify-content: end;
+        display: inline;
+      }
+      .social-icons img:hover {
+        transform: scale(1.2);
       }
       @keyframes scroll {
         0% {
@@ -288,8 +304,9 @@
     </div>
   </body>
   <hr />
-  <div>
-    <div style="display: flex; justify-content: end">
+  <div class="footer">
+    <p>Copy right, &copy; Cambodia Product Shop Co, Ltd.</p>
+    <div class="social-icons">
       <a href="https://www.facebook.com" target="_blank"
         ><img src="icons8-facebook-96.png" alt="facebook" />
       </a>
@@ -307,5 +324,4 @@
       </a>
     </div>
   </div>
-  <footer>Copy right, &copy; Cambodia Product Shop Co, Ltd.</footer>
 </html>
