@@ -78,14 +78,20 @@ main {
   gap: 25px;
   text-align: center;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .product-card {
+    width: 100%;
   }
 }
 @media (max-width: 1024px) {
   .container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
