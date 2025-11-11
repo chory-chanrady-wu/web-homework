@@ -18,7 +18,7 @@
           />
           <span class="site-title">Cambodia Product Shop</span>
         </a>
-        <nav>
+        <nav class="nav-list">
           <ul>
             <li><a href="./index.html" aria-current="page">Home</a></li>
             <li><a href="./product.html">Product</a></li>
@@ -27,9 +27,39 @@
             <li><a href="./product.html">Log Out</a></li>
           </ul>
         </nav>
+        <div class="menu-icon">
+          <i data-lucide="menu"></i>
+        </div>
       </div>
     </header>
 
+    <!-- bottom navbar -->
+    <div class="bottom-navbar">
+      <a href="#" class="bottom-navbar-item">
+        <i data-lucide="house"></i>
+        <span>Home</span>
+      </a>
+      <a href="./product.html" class="bottom-navbar-item">
+        <i data-lucide="shirt"></i>
+        <span>Product</span>
+      </a>
+      <a href="./contact.html" class="bottom-navbar-item">
+        <i data-lucide="contact"></i>
+        <span>Contact</span>
+      </a>
+      <a href="./about.html" class="bottom-navbar-item">
+        <i data-lucide="badge-check"></i>
+        <span>About</span>
+      </a>
+      <a href="#" class="bottom-navbar-item">
+        <i data-lucide="log-out"></i>
+        <span>Logout</span>
+      </a>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
     <main>
       <section class="hero-section">
         <h1>Welcome to Cambodia Product Shop!</h1>
