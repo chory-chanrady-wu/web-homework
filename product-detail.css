@@ -1,0 +1,113 @@
+.product-detial {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 30px;
+  margin: 25px;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+}
+
+.product-thumbnail {
+  max-height: 450px;
+  overflow-y: auto;
+  direction: rtl;
+}
+
+.product-thumbnail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-image {
+  display: flex;
+  gap: 10px;
+}
+.product-image img {
+  width: 100%;
+  height: auto;
+  padding: 15px 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-related {
+  margin-top: 30px;
+}
+
+.product-related-grid {
+  margin-top: 20px;
+  display: grid;
+  max-width: 800px;
+  max-height: 200px;
+  overflow-x: auto;
+  direction: ltr;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.product-related-card img {
+  width: 110px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.product-related-card {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .product-container {
+    width: 98%;
+    /* grid-template-columns: 1fr; */
+  }
+  .product-detial {
+    grid-template-columns: 1fr;
+  }
+  .product-gallery {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: center; /* Add this to constrain the width of flex items */
+  }
+  .product-thumbnail {
+    order: 2;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    direction: ltr;
+    max-width: 250px;
+  }
+  .product-thumbnail img {
+    width: 120px;
+    height: 100px;
+    /* object-fit: cover; */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .product-image {
+    order: 1;
+  }
+  .product-image img {
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    margin: 10px 0;
+  }
+  .product-related-grid {
+    max-height: 130px;
+    gap: 7px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product-related-card img {
+    width: 70px;
+    height: 90px;
+    object-fit: cover;
+  }
+}
