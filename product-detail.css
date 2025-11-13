@@ -79,7 +79,6 @@
   .product-thumbnail {
     order: 2;
     display: flex;
-    overflow-x: auto;
     gap: 10px;
     direction: ltr;
     max-width: 250px;
