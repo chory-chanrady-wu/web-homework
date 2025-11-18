@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Detail</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product-detail.css" />
   </head>
 
   <body>
@@ -51,7 +52,7 @@
         <i data-lucide="badge-check"></i>
         <span>About</span>
       </a>
-      <a href="./index.html" class="bottom-navbar-item">
+      <a href="#" class="bottom-navbar-item">
         <i data-lucide="log-out"></i>
         <span>Logout</span>
       </a>
@@ -61,30 +62,118 @@
       lucide.createIcons();
     </script>
     <div class="product-container">
-      <div class="product-image">
-        <img
-          src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
-          alt="Product"
-        />
+      <div class="product-detial">
+        <div class="product-gallery">
+          <div class="product-thumbnail">
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+          </div>
+          <div class="product-image">
+            <img
+              src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+              alt="Product"
+            />
+          </div>
+        </div>
+        <div class="product-info">
+          <h2>Product Name</h2>
+          <p class="product-price">$109.95</p>
+          <p class="product-description">
+            <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptatum magnam doloremque dolore, dignissimos
+            repudiandae iste laborum accusantium perferendis vitae in.
+          </p>
+
+          <div class="product-quantity">
+            <label for="quantity">Quantity:</label>
+            <input id="quantity" type="number" min="1" value="1" />
+          </div>
+
+          <div class="product-button">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
       </div>
 
-      <div class="product-info">
-        <h2>Product Name</h2>
-        <p class="product-price">$99.95</p>
-        <p class="product-description">
-          <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptatum magnam doloremque dolore, dignissimos
-          repudiandae iste laborum accusantium perferendis vitae in.
-        </p>
-
-        <div class="product-quantity">
-          <label for="quantity">Quantity:</label>
-          <input id="quantity" type="number" min="1" value="1" />
+      <!-- related product -->
+      <div class="product-related">
+        <h2>Related Products</h2>
+      </div>
+      <div class="product-related-grid">
+        <div class="product-related-card">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+            alt=""
+          />
+          <p>Product Name</p>
+          <p>$15.99</p>
         </div>
-
-        <div class="product-button">
-          <button>Add to Cart</button>
-          <button>Buy Now</button>
+        <div class="product-related-card">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+            alt=""
+          />
+          <p>Product Name</p>
+          <p>$15.99</p>
+        </div>
+        <div class="product-related-card">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+            alt=""
+          />
+          <p>Product Name</p>
+          <p>$15.99</p>
+        </div>
+        <div class="product-related-card">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+            alt=""
+          />
+          <p>Product Name</p>
+          <p>$15.99</p>
+        </div>
+        <div class="product-related-card">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+            alt=""
+          />
+          <p>Product Name</p>
+          <p>$15.99</p>
+        </div>
+        <div class="product-related-card">
+          <img
+            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png"
+            alt=""
+          />
+          <p>Product Name</p>
+          <p>$15.99</p>
         </div>
       </div>
     </div>
